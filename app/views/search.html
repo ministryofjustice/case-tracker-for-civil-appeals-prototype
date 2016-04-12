@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">Tracking a civil appeal case</h1>
+
+      <p>
+        You can search for a case in the following three ways:
+      </p>
+
+      <ul class="list list-bullet form-hint">
+        <li><strong>By Case Number</strong> – The case number for the case needs to be 8 digits long and must be entered in the following format, without any spaces or oblique strokes: 20051234</li>
+        <li><strong>By Title</strong> – The title can be entered using the names of either party. For example, in the case of Smith & Co v Jones, either "Smith" or "Jones" can be entered to search</li>
+        <li><strong>By Date</strong> – A date of hearing can be entered in the following format DD-MMM-YY eg: 15–Jan–09, or you can click the calendar icon and choose a date from the pop–up calendar.</li>
+      </ul>
+
+      <form class="form" method="post">
+        <label class="form-label" for="search">Search</label>
+        <input class="form-control" id="search" type="text" name="search_term">
+        <input type="submit" name="submit" class="button"value="Search for case">
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
